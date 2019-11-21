@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "fguillot/json-rpc": "@stable"
+        "fguillot/json-rpc": "^1.2"
     },
       "autoload": {
           "psr-4": {
