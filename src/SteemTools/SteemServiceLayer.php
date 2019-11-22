@@ -34,9 +34,9 @@ class SteemServiceLayer
         if (is_null($response) || array_key_exists('error', $response)) {
             if ($this->throw_exception) {
                 if (is_null($response)) {
-                    throw new Exception($method);
+                    throw new \Exception($method);
                 } else {
-                    throw new Exception($response['error']);
+                    throw new \Exception($response['error']);
                 }
             } else {
                 if (is_null($response)) {
