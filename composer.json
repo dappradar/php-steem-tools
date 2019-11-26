@@ -10,7 +10,11 @@
         }
     ],
     "require": {
-        "fguillot/json-rpc": "^1.2"
+        "php": "^7.1.3",
+        "fguillot/json-rpc": "^1.2",
+        "psr/log": "^1.1",
+        "ext-json": "*",
+        "ext-curl": "*"
     },
       "autoload": {
           "psr-4": {

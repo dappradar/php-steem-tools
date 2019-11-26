@@ -1,23 +1,22 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "90ebd6290a3fbcf599017229abcd42d6",
-    "content-hash": "3734646719d1d82c449b62272a321db0",
+    "content-hash": "042d0ddf94b12b48dd4465a73c3619c3",
     "packages": [
         {
             "name": "fguillot/json-rpc",
             "version": "v1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fguillot/JsonRPC.git",
+                "url": "https://github.com/matasarei/JsonRPC.git",
                 "reference": "d491bb549bfa11aff4c37abcea2ffb28c9523f69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fguillot/JsonRPC/zipball/d491bb549bfa11aff4c37abcea2ffb28c9523f69",
+                "url": "https://api.github.com/repos/matasarei/JsonRPC/zipball/d491bb549bfa11aff4c37abcea2ffb28c9523f69",
                 "reference": "d491bb549bfa11aff4c37abcea2ffb28c9523f69",
                 "shasum": ""
             },
@@ -44,17 +43,66 @@
             ],
             "description": "Simple Json-RPC client/server library that just works",
             "homepage": "https://github.com/fguillot/JsonRPC",
-            "time": "2016-06-25 23:11:10"
+            "time": "2016-06-25T23:11:10+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2019-11-01T11:05:21+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "fguillot/json-rpc": 0
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.1.3",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
     "platform-dev": []
 }
